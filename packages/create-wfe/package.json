@@ -1,0 +1,37 @@
+{
+  "name": "create-wfe",
+  "version": "0.0.1",
+  "type": "module",
+  "license": "MIT",
+  "author": "busyhe",
+  "bin": {
+    "create-wfe": "index.js",
+    "cwa": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/minimist": "^1.2.2",
+    "@types/prompts": "^2.4.4",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "rollup-plugin-license": "^3.0.1",
+    "picocolors": "^1.0.0",
+    "rollup": "^3.25.2"
+  }
+}
