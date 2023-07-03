@@ -2,9 +2,6 @@
   "name": "@vitejs/vite-monorepo",
   "private": true,
   "type": "module",
-  "engines": {
-    "node": "^14.18.0 || >=16.0.0"
-  },
   "repository": {
     "type": "git",
     "url": "git@github.com:busyhe/wfe.git"
@@ -18,6 +15,7 @@
   ],
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
     "format": "prettier --write --cache .",
     "lint": "eslint --cache .",
     "typecheck": "tsc -p scripts --noEmit && pnpm -r --parallel run typecheck",
@@ -31,8 +29,7 @@
     "build": "pnpm -r --filter='./packages/*' run build",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "release": "tsx scripts/release.ts",
-    "ci-publish": "tsx scripts/publishCI.ts",
-    "ci-docs": "run-s build docs-build"
+    "ci-publish": "tsx scripts/publishCI.ts"
   },
   "devDependencies": {
     "@babel/types": "^7.22.5",
@@ -59,7 +56,8 @@
     "@typescript-eslint/eslint-plugin": "^5.60.0",
     "@typescript-eslint/parser": "^5.60.0",
     "@vitejs/release-scripts": "^1.2.0",
-    "conventional-changelog-cli": "^2.2.2",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.43.0",
     "eslint-define-config": "^1.21.0",
     "eslint-plugin-import": "^2.27.5",
@@ -68,6 +66,7 @@
     "execa": "^7.1.1",
     "fast-glob": "^3.2.12",
     "fs-extra": "^11.1.1",
+    "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
     "npm-run-all": "^4.1.5",
     "picocolors": "^1.0.0",
@@ -76,7 +75,6 @@
     "resolve": "^1.22.2",
     "rimraf": "^5.0.1",
     "rollup": "^3.25.2",
-    "simple-git-hooks": "^2.8.1",
     "tslib": "^2.5.3",
     "tsx": "^3.12.7",
     "typescript": "^5.0.2",
@@ -84,7 +82,17 @@
     "vitest": "^0.32.2",
     "vue": "^3.3.4"
   },
-  "packageManager": "pnpm@8.6.4",
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ],
+    "packages/*/{src,types}/**/*.ts": [
+      "eslint --cache --fix"
+    ],
+    "packages/**/*.d.ts": [
+      "eslint --cache --fix"
+    ]
+  },
   "pnpm": {
     "packageExtensions": {
       "postcss-load-config": {
@@ -98,5 +106,14 @@
         }
       }
     }
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "packageManager": "pnpm@8.6.4"
 }
