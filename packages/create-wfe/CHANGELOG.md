@@ -1,5 +1,11 @@
 # create-wfe
 
+## 0.1.2
+
+### Patch Changes
+
+- b674fc5f: fix:remove github action .npmrc
+
 ## 0.1.1
 
 ### Patch Changes
