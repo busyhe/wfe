@@ -1,0 +1,32 @@
+{
+    "name": "@types/stylus",
+    "version": "0.48.38",
+    "description": "TypeScript definitions for stylus",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/stylus",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Maxime LUCE",
+            "url": "https://github.com/SomaticIT",
+            "githubUsername": "SomaticIT"
+        },
+        {
+            "name": "Daniel Moore",
+            "url": "https://github.com/STRd6",
+            "githubUsername": "STRd6"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/stylus"
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/node": "*"
+    },
+    "typesPublisherContentHash": "9857279c60d69b29be665c80cfb5f91619d82f9e3cb95348455081db06f59c8f",
+    "typeScriptVersion": "3.9"
+}
