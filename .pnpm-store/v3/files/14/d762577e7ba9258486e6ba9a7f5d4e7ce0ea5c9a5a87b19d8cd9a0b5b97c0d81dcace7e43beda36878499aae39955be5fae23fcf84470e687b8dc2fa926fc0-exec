@@ -1,0 +1,16 @@
+# Installation
+> `npm install --save @types/stylus`
+
+# Summary
+This package contains type definitions for stylus (https://github.com/stylus/stylus).
+
+# Details
+Files were exported from https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/stylus.
+
+### Additional Details
+ * Last updated: Wed, 11 May 2022 00:01:38 GMT
+ * Dependencies: [@types/node](https://npmjs.com/package/@types/node)
+ * Global values: none
+
+# Credits
+These definitions were written by [Maxime LUCE](https://github.com/SomaticIT), and [Daniel Moore](https://github.com/STRd6).
