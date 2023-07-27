@@ -31,6 +31,10 @@
     "url": "https://github.com/busyhe/wfe/issues"
   },
   "homepage": "https://github.com/busyhe/wfe/blob/main/packages/create-wfe/README.md",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.1",
     "@types/minimist": "^1.2.2",
