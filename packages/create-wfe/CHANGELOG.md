@@ -1,5 +1,11 @@
 # create-wfe
 
+## 0.1.4
+
+### Patch Changes
+
+- 4d93f2d1: fix: release
+
 ## 0.1.3
 
 ### Patch Changes
