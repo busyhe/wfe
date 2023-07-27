@@ -1,5 +1,11 @@
 # create-wfe
 
+## 0.1.3
+
+### Patch Changes
+
+- e3699dd4: fix: github action
+
 ## 0.1.2
 
 ### Patch Changes
