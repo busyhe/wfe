@@ -1,10 +1,12 @@
 {
   "name": "@vitejs/vite-monorepo",
-  "private": true,
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git@github.com:busyhe/wfe.git"
+  },
+  "bugs": {
+    "url": "https://github.com/busyhe/wfe/issues"
   },
   "keywords": [
     "frontend",
@@ -29,7 +31,7 @@
     "build": "pnpm -r --filter='./packages/*' run build",
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
     "ci:version": "changeset version",
-    "ci:publish": "pnpm publish -r --access public --no-git-checks"
+    "ci:publish": "pnpm publish -r"
   },
   "devDependencies": {
     "@babel/types": "^7.22.5",

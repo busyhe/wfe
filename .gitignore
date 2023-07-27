@@ -5,7 +5,6 @@
 *.local
 *.log
 /.vscode/
-/packages/vite/LICENSE
 dist
 dist-ssr
 explorations
@@ -14,3 +13,4 @@ playground-temp
 temp
 TODOs.md
 .eslintcache
+.pnpm-store
