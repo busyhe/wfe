@@ -41,6 +41,30 @@ type FrameworkVariant = {
 
 const FRAMEWORKS: Framework[] = [
   {
+    name: 'monorepo',
+    display: 'Monorepo',
+    color: magenta,
+    variants: [
+      {
+        name: 'monorepo-ts',
+        display: 'Monorepo (TypeScript)',
+        color: blue,
+      },
+    ],
+  },
+  {
+    name: 'nestjs',
+    display: 'NestJS',
+    color: magenta,
+    variants: [
+      {
+        name: 'nestjs',
+        display: 'NextJS',
+        color: blue,
+      },
+    ],
+  },
+  {
     name: 'vue',
     display: 'Vue',
     color: green,
@@ -102,14 +126,14 @@ const FRAMEWORKS: Framework[] = [
     color: reset,
     variants: [
       {
-        name: 'create-vite-extra',
-        display: 'create-vite-extra ↗',
+        name: 'create-wfe-extra',
+        display: 'create-wfe-extra ↗',
         color: reset,
         customCommand: 'npm create vite-extra@latest TARGET_DIR',
       },
       {
-        name: 'create-electron-vite',
-        display: 'create-electron-vite ↗',
+        name: 'create-electron-wfe',
+        display: 'create-electron-wfe ↗',
         color: reset,
         customCommand: 'npm create electron-vite@latest TARGET_DIR',
       },
@@ -125,7 +149,7 @@ const renameFiles: Record<string, string | undefined> = {
   _gitignore: '.gitignore',
 }
 
-const defaultTargetDir = 'vite-project'
+const defaultTargetDir = 'wfe-project'
 
 async function init() {
   const argTargetDir = formatTargetDir(argv._[0])
