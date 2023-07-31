@@ -46,7 +46,7 @@ const FRAMEWORKS: Framework[] = [
     color: magenta,
     variants: [
       {
-        name: 'monorepo-ts',
+        name: 'monorepo',
         display: 'Monorepo (TypeScript)',
         color: blue,
       },
