@@ -9,7 +9,7 @@ Next Generation Frontend Tooling
 🔩 Universal Plugin Interface
 🔑 Fully Typed APIs
 
-![Alt](https://repobeats.axiom.co/api/embed/cce0d11d754d9bb9810889a14df604eba8e20167.svg 'Repobeats analytics image')
+![Alt](https://repobeats.axiom.co/api/embed/4498a9803b31c78104578017f9a9eb8f66d383cb.svg "Repobeats analytics image")
 
 ## Documentation
 
